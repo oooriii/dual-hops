@@ -1,0 +1,316 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  background-color: #ece9df;
+}
+@media (min-width: 768px){
+  .centered-block{
+    max-width: 90.625rem;
+    margin: auto;
+  }
+
+}
+@media (max-width: 1500px){
+  header a.is-info{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px){
+  body{
+    float: left;
+    margin: auto;
+  }
+
+}
+
+/**** header ****/
+.aux-span{
+  height: 140px;
+  width: 1px;
+  display: inline-block;
+}
+.parlem{
+  position: relative;
+  top: -60px;
+}
+.logo-dual-principal{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 100px;
+  max-width: 100%;
+}
+body > header{
+  height: 140px;
+  position: fixed;
+  z-index: 100;
+  background-color: #ece9df;
+  left: 0;
+  right: 0;
+}
+
+
+header .link{
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+body > header.mini{
+  height: 60px;
+}
+body > header.mini .aux-span{
+  height: 60px;
+}
+
+
+a.link.is-info telf {
+    font-size: 0.9em;
+}
+a.punts{
+  font-weight: bold;
+}
+a.punts::after, a.punts::before {
+    content: "·";
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: margin-left, margin-right .3s;
+}
+a.punts:hover::after, a.punts:hover::before {
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: margin-left, margin-right .3s;
+}
+
+a.link.is-info.align-middle .icon {
+    font-size: 1.5rem;
+}
+
+/***** cos ****/
+body > main{
+  margin-top: 140px;
+  float: left;
+  width: 100%;
+}
+main [class^="col"] {
+  /*
+  white-space: nowrap;
+  */
+  box-sizing: border-box;
+  /*
+  box-shadow: inset 0 0 0 5px #ece9df;
+  */
+  box-shadow: inset 0 0 0 0.5rem #ece9df;
+
+  padding: 0;
+  /*
+  text-align: center;
+  */
+  background-color: #00D9B6;
+  background-size: cover;
+}
+main .v-rectable:before,
+main .h-rectable:before,
+main .square:before {
+  content: '';
+  width: 0;
+}
+
+main .v-rectable:before,
+main .h-rectable:before,
+main .square:before,
+.ib {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+main .square:before {
+  padding-top: 100%;
+  /* makes expand to a square */
+}
+
+main .h-rectangle:before {
+  padding-top: 50%;
+  /* makes a rectangle half the height of a square */
+}
+main .v-rectangle:before {
+  padding-top: 200%;
+  /* makes a rectangle half the height of a square */
+}
+main .row div.b1, main .row div.b2,
+main .row div.b3, main div.row .b4,
+main .row div.b7, main div.row .b8,
+main .row div.b9, main div.row .b10,
+main .row div.b11, main div.row .b12
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .row .b1{
+  background: url("../images/girl-beer.jpg") 100% #00D9B6;
+  background-position-x: 20%;
+}
+main .row .b2{
+  background: url("../images/fermenter.jpg") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main .row .b3{
+  background: url("../images/beers.jpg") 100% #00D9B6;
+}
+main .row .b4{
+  background: url("../images/malta.png") 150% #00D9B6;
+  background-size: 150% !important;
+  background-position: 50% 50%;
+}
+main .row .b5{
+  /*
+  color: #FFF;
+  */
+  padding: 1.5rem;
+  overflow-y: scroll;
+}
+.b5 article, .b5 p{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.b5 h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.b5 article h3{
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
+}
+.b5 article span{
+  white-space: nowrap;
+}
+.b5 article span:after{
+  content: '/';
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+.b5 article span:last-child:after{
+  display: none;
+}
+.b5 hr{
+  height: 4px;
+  color: #FFF;
+  border-top: 4px solid #FFF;
+
+}
+.b5 h2.punts::after, .b5 h2.punts::before {
+    content: "·";
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: margin-left, margin-right .3s;
+}
+
+main .row .b6{
+  background-color: #CCC;
+  text-align: center;
+}
+.b6 img{
+  width: 12rem;
+  height: 12rem;
+}
+main .row .b7{
+  background-color: #FFF;
+  padding: 15px;
+}
+.b7 h1{
+  text-align: center;
+  padding: 25px;
+}
+main .row .b8{
+  background: url("../images/trasvassament.jpg") 100% #00D9B6;
+  background-position-x: 35%;
+}
+
+main .row .b8{
+  background: url("../images/trasvassament.jpg") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main .row .b9{
+  background: url("../images/hops.png") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main .row .b10{
+  background: url("../images/beer-menu.jpg") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main .row .b11{
+  background: url("../images/llauna.png") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main .row .b12{
+  background: url("../images/taps.png") 100% #00D9B6;
+  background-position-x: 35%;
+}
+main section.row{
+  margin-top: 3rem;
+}
+main section.row article{
+  background-color: inherit;
+}
+main section.row figure{
+  overflow: hidden;
+  padding: 0.5rem;
+}
+section figure img{
+  max-width: 100%;
+}
+/*
+footer .centered-block{
+*/
+footer{
+  float: left;
+  margin-top: 50px;
+  background-color: #1d1d1d;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  color: #FFF;
+  width: 100%;
+}
+footer h3{
+  text-transform: uppercase;
+}
+footer input[type='text'],
+footer label{
+  width: 100%;
+}
+footer textarea{
+  width: 90%;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+footer label{
+  margin-top: 1rem;
+}
+footer.subfooter{
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #000;
+  color: #FFF;
+  float: left;
+  width: 100%;
+}
+footer .localitzacio{
+  margin-top: 2rem;
+}
+footer .localitzacio address{
+  line-height: 0.6rem;
+  margin-top: 3rem;
+}
+footer .localitzacio.mapa{
+  margin-top: 7rem;
+}

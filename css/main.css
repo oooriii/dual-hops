@@ -1,0 +1,78 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+/**** header ****/
+
+.logo-dual-principal{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 100px;
+}
+header{
+  max-width: 2000px;
+}
+header .navbar{
+  height: 120px;
+  box-shadow: none;
+}
+header .navbar .column.level.columns {
+    height: 10em;
+}
+header .navbar .link{
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.link.is-info telf {
+    font-size: 0.9em;
+}
+a.punts{
+  font-weight: bold;
+}
+a.punts::after, a.punts::before {
+    content: "·";
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: margin-left, margin-right .3s;
+}
+a.punts:hover::after, a.punts:hover::before {
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: margin-left, margin-right .3s;
+}
+
+
+
+/***** cos ****/
+section.container{
+  margin: auto;
+  margin-top: 100px;
+}
+.is-half{
+   height: calc(width);
+  /*
+  padding-top: 100%;
+  */
+}
+.is-half img{
+  height: 456px;
+  object-fit: cover;
+  width: 100%;
+}
+.is-one-quarter img.vertical{
+  height: 456px;
+  height: max-content;
+  object-fit: cover;
+  width: 100%;
+}
+.is-one-quarter img.block{
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+.col1 *{
+  background-color: #00d1b2;
+}
