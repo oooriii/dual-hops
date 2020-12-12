@@ -33,6 +33,9 @@ body{
   position: relative;
   top: -60px;
 }
+.is-telf{
+  font-size: 0.55rem !important;
+}
 .logo-dual-principal{
   margin-top: 20px;
   margin-bottom: 20px;
