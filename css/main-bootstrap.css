@@ -62,7 +62,10 @@ body > header.mini .aux-span{
   height: 60px;
 }
 
-
+.col.socis {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 a.link.is-info telf {
     font-size: 0.69rem;
 }
