@@ -63,8 +63,12 @@ body > header.mini .aux-span{
 }
 
 .col.socis {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.col.socis button{
+  background-color: #00D9B6;
+  border-color: #000;
 }
 a.link.is-info telf {
     font-size: 0.69rem;
