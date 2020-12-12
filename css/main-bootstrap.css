@@ -33,9 +33,6 @@ body{
   position: relative;
   top: -60px;
 }
-.is-telf{
-  font-size: 0.55rem !important;
-}
 .logo-dual-principal{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -67,7 +64,7 @@ body > header.mini .aux-span{
 
 
 a.link.is-info telf {
-    font-size: 0.9em;
+    font-size: 0.75rem;
 }
 a.punts{
   font-weight: bold;
