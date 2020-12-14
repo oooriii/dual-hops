@@ -35,6 +35,7 @@ var vm = new Vue({
          country: 'Cat',
        },
      },
+     /*
 		 isActiveBurger: false,
 		 isActiveAcces: false,
 		 isActiveNotification: true,
@@ -46,7 +47,9 @@ var vm = new Vue({
 			 missatge: '',
 			 status: '',
 		 },
+     */
 	 },
+   /*
 	 computed:{
 		 admintab: function(){
 			 return ! this.usertab;
@@ -84,5 +87,5 @@ var vm = new Vue({
 				 coll.parentNode.removeChild(coll);
 		 },
 	 },
-
+*/
 });
