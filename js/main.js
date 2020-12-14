@@ -1,7 +1,7 @@
 var vm = new Vue({
 	 el: '#vue-app',
 	 data: {
-     birres:{
+     birres:[
        {
          nom: 'Simple A',
          estil: 'American IPA',
@@ -34,7 +34,7 @@ var vm = new Vue({
          prod: 'Dual Hops',
          country: 'Cat',
        },
-     },
+     ],
      /*
 		 isActiveBurger: false,
 		 isActiveAcces: false,
