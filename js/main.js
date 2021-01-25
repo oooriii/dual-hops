@@ -2,7 +2,7 @@ Vue.component('birres', {
 //	props: [ 'geturi', 'posturi', 'comanda', 'adomiciliuri', 'adomicili',  'missatgesociuri', 'missatgesoci' ],
 //	props: [ 'geturi'],
 	template: `
-	<article v-for="birra in this.birres">
+	<article v-for="birra in birres">
 	  <h3>{{birra.nom}}</h3>
 	  <div>
 	    <span aria-aria-label="style">{{birra.estil}}</span>
@@ -36,6 +36,7 @@ Vue.component('birres', {
 //			.then(response => (this.birres = response.data)).
 .then(function (response) {
 		console.log(response.data);
+		this.birres = response.data;
 }).
 			finally(function(){
 				self.loading=false;
@@ -56,7 +57,7 @@ Vue.component('events', {
 		</calendar>
 -->
 		<ul>
-			<li v-for="event in this.events"><time>{{event.data}}</time>{{event.titol}} <a v-if="! event.complet" v-href="event.formulari" target="_blank" class="w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
+			<li v-for="event in this.events"><time>{{event.data}}</time>{{event.titol}} <a v-if="! event.complet" v-bind:href="event.formulari" target="_blank" class="w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
 		</ul>
 	</main>
 	`,
