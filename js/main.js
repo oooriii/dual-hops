@@ -1,6 +1,8 @@
 var vm = new Vue({
 	 el: '#vue-app',
+	/*
 	 data: {
+*/
 /*
      birres:[
        {
@@ -37,11 +39,18 @@ var vm = new Vue({
        },
      ],
 */
+/*
 		 birres:[],
 		 events:[],
 
 	 },
-
+*/
+	 data () {
+     return {
+			 birres:[],
+			 events:[],
+     }
+   },
 	mounted () {
 			this.loading = true;
 			self = this;
