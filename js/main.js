@@ -33,7 +33,7 @@ Vue.component('birres', {
 			self = this;
 			// birres
 			axios.get('birres.json')
-			.then(response => (this.birres = response.data)).
+			.then(response => (this.birres = response.data.birres)).
 			finally(function(){
 				self.loading=false;
 			});
@@ -76,7 +76,7 @@ Vue.component('events', {
 			self = this;
 			// birres
 			axios.get('events.json')
-			.then(response => (this.events = response.data)).
+			.then(response => (this.events = response.data.events)).
 			finally(function(){
 				self.loading=false;
 			});
