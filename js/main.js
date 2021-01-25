@@ -74,3 +74,24 @@ var vm = new Vue({
 
 	},
 });
+
+var vm = new Vue({
+	 el: '#vue-header',
+	 data: {
+		 isActiveBurger: false,
+		 loadingBtn: false,
+		 message: {
+			 missatge: '',
+			 status: '',
+		 },
+	 },
+
+	 methods:{
+		 // generals
+		 toggleBurger: function(){
+				 this.isActiveBurger = !this.isActiveBurger;
+				 //console.log('toggle');
+		 },
+	 },
+
+});
