@@ -33,7 +33,10 @@ Vue.component('birres', {
 			self = this;
 			// birres
 			axios.get('birres.json')
-			.then(response => (this.birres = response.data)).
+//			.then(response => (this.birres = response.data)).
+.then(function (response) {
+		console.log(response.data);
+}).
 			finally(function(){
 				self.loading=false;
 				console.log(self.birres)
@@ -88,6 +91,7 @@ Vue.component('events', {
 var vm = new Vue({
 	 el: '#vue-app',
 	 data: {
+/*
      birres:[
        {
          nom: 'Simple A',
@@ -122,6 +126,8 @@ var vm = new Vue({
          country: 'Cat',
        },
      ],
+*/
+		 birres:[],
 		 events:[],
      /*
 		 isActiveBurger: false,
