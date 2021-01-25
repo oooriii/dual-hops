@@ -301,7 +301,7 @@
         <li><time>2020.05.15 22:00</time>Cata cerveses del mes</li>
         <li><time>2020.05.25 22:00</time>Cata Ipes del club</li>
 -->
-        <li class="row" v-for="event in events"><time class="col-4">{{event.data}}</time><span class="col-6">{{event.titol}}</span> <a v-if="! event.complet" v-bind:href="event.formulari" target="_blank" class="col-2 w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
+        <li class="row" v-for="event in events"><time class="col-2 col-md-4">{{event.data}}</time><span class="col-md-6 col-5">{{event.titol}}</span> <a v-if="! event.complet" v-bind:href="event.formulari" target="_blank" class="col-md-2 col-5 w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
       </ul>
     </main>
 <!--
