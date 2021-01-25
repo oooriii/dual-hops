@@ -51,7 +51,7 @@
 <!--
   <ul class="d-none">
 -->
-<ul class="display-6" v-bind:class="{ d-none: !isActiveBurger }">
+<ul class="display-6" v-bind:class="{ isActiveBurger ? '': d-none}">
 
     <li><a href="#socis" class="link is-info punts align-middle">Socis</a></li>
     <li><a href="#el-lab" class="link is-info punts align-middle">El Lab</a></li>
