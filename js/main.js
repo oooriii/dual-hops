@@ -78,7 +78,7 @@ var vm = new Vue({
 var vm = new Vue({
 	 el: '#vue-header',
 	 data: {
-		 isNotActiveBurger: true,
+		 isActiveBurger: false,
 		 loadingBtn: false,
 		 message: {
 			 missatge: '',

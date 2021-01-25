@@ -41,7 +41,7 @@
 <header id="vue-header">
 <!-- nav mobil -->
 
-<nav class="d-md-none container-fluid row" v-click="toggleBurger">
+<nav class="d-md-none container-fluid row" v-on:click="toggleBurger">
   <div class="col-3">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
   </div>
@@ -51,7 +51,7 @@
 <!--
   <ul class="d-none">
 -->
-<ul class="display-sm-6" v-bind:class="{d-none : isNotActiveBurger}">
+<ul class="display-sm-6" v-bind:class="{'d-none' : ! isActiveBurger}">
 
     <li><a href="#socis" class="link is-info punts align-middle">Socis</a></li>
     <li><a href="#el-lab" class="link is-info punts align-middle">El Lab</a></li>
