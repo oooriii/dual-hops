@@ -275,6 +275,10 @@ main section.row figure{
 section figure img{
   max-width: 100%;
 }
+
+.socis .card-body ul {
+    min-height: 350px;
+}
 /*
 footer .centered-block{
 */
