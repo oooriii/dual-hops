@@ -1,94 +1,3 @@
-Vue.component('birres', {
-//	props: [ 'geturi', 'posturi', 'comanda', 'adomiciliuri', 'adomicili',  'missatgesociuri', 'missatgesoci' ],
-//	props: [ 'geturi'],
-	template: `
-	<article v-for="birra in birres">
-	  <h3>{{birra.nom}}</h3>
-	  <div>
-	    <span aria-aria-label="style">{{birra.estil}}</span>
-	    <span aria-aria-label="alc">{{birra.alc}}%</span>
-	    <span aria-aria-label="bittering">{{birra.amargor}} IBU</span>
-	    <span aria-aria-label="prod">{{birra.prod}}</span>
-	    <span aria-aria-label="country">{{birra.country}}</span>
-	  </div>
-	</article>
-	`,
-	data () {
-	    return {
-						loading: false,
-						message: '',
-						status: '',
-						birres: [],
-	        }
-
-	},
-	computed:{
-
-	},
-	methods:{
-
-	},
-	mounted () {
-			this.loading = true;
-			self = this;
-			// birres
-			axios.get('birres.json')
-//			.then(response => (this.birres = response.data)).
-.then(function (response) {
-		console.log(response.data);
-		this.birres = response.data;
-}).
-			finally(function(){
-				self.loading=false;
-				console.log(self.birres)
-			});
-
-	},
-});
-
-Vue.component('events', {
-//	props: [ 'geturi', 'posturi', 'comanda', 'adomiciliuri', 'adomicili',  'missatgesociuri', 'missatgesoci' ],
-//	props: [ 'geturi'],
-	template: `
-	<main>
-		<p>Durant aquest mes farem les següents activitats:</p>
-<!--
-		<calendar>
-		</calendar>
--->
-		<ul>
-			<li v-for="event in this.events"><time>{{event.data}}</time>{{event.titol}} <a v-if="! event.complet" v-bind:href="event.formulari" target="_blank" class="w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
-		</ul>
-	</main>
-	`,
-	data () {
-	    return {
-						loading: false,
-						message: '',
-						status: '',
-						events: [],
-	        }
-
-	},
-	computed:{
-
-	},
-	methods:{
-
-	},
-	mounted () {
-			this.loading = true;
-			self = this;
-			// birres
-			axios.get('events.json')
-			.then(response => (this.events = response.data)).
-			finally(function(){
-				self.loading=false;
-			});
-
-	},
-});
-
 var vm = new Vue({
 	 el: '#vue-app',
 	 data: {
@@ -130,59 +39,9 @@ var vm = new Vue({
 */
 		 birres:[],
 		 events:[],
-     /*
-		 isActiveBurger: false,
-		 isActiveAcces: false,
-		 isActiveNotification: true,
-		 usertab: true,
-		 // recuperar pwd
-		 email: '',
-		 loadingBtn: false,
-		 message: {
-			 missatge: '',
-			 status: '',
-		 },
-     */
+
 	 },
-   /*
-	 computed:{
-		 admintab: function(){
-			 return ! this.usertab;
-		 },
-	 },
-	 methods:{
-		 // generals
-		 toggleBurger: function(){
-				 this.isActiveBurger = !this.isActiveBurger;
-				 //console.log('toggle');
-		 },
-		 toggleAcces: function(){
-				 this.isActiveAcces = !this.isActiveAcces;
-		 },
-		 deleteNotification: function(){
-				 this.isActiveNotification = false;
-		 },
-		 recuperarPwd: function(){
-			 this.loadingBtn=true;
-			 self=this;
-			 axios.get('/auth/recuperar-password/2/'+this.email).
-			 then(response => (this.message =  response.data)).
-			 catch(response => (this.message =  response.data )).
-			 finally(function(){
-				 self.loadingBtn=false;
-			 });
-		 },
-		 // treure input image
-		 deleteImage: function(){
-				 var img=document.getElementById('image');
-				 img.parentNode.removeChild(img);
-		 },
-		 deleteCollaret: function(){
-				 var coll=document.getElementById('collaret');
-				 coll.parentNode.removeChild(coll);
-		 },
-	 },
-*/
+
 	mounted () {
 			this.loading = true;
 			self = this;
@@ -202,5 +61,7 @@ var vm = new Vue({
 				console.log(self.birres)
 			});
 
+			console.log(this.events);
+			console.log(this.birres);
 	},
 });
