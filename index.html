@@ -51,7 +51,7 @@
 <!--
   <ul class="d-none">
 -->
-<ul class="display-sm-6" v-bind:class="isActiveBurger ? '': d-none">
+<ul class="display-sm-6" v-bind:class="{d-none : isNotActiveBurger}">
 
     <li><a href="#socis" class="link is-info punts align-middle">Socis</a></li>
     <li><a href="#el-lab" class="link is-info punts align-middle">El Lab</a></li>
@@ -126,17 +126,17 @@
 <main id="vue-app">
   <div id="blocs-menu" class="container-fluid row centered-block">
 
-  <div class="col-md-6 square b1">
+  <div class="col-md-6 d-none square b1">
 
   </div>
-  <div class="col-md-3 v-rectangle b2">
+  <div class="col-md-3 d-none v-rectangle b2">
 
   </div>
-  <div class="col-md-3 no-gutters row">
+  <div class="col-md-3 d-none no-gutters row">
     <div class="col-md-12 square b3">
 
     </div>
-    <div class="col-md-12 square b4">
+    <div class="col-md-12 d-none square b4">
 
     </div>
 
@@ -224,24 +224,24 @@
   </div>
 
 
-  <div class="col-md-8 h-rectangle b8">
+  <div class="col-md-8 d-none h-rectangle b8">
 
   </div>
 
-  <div class="col-md-4 square b9">
+  <div class="col-md-4 d-none square b9">
 
   </div>
 </div>
 
-  <div class="col-md-6 h-rectangle b10">
+  <div class="col-md-6 d-none h-rectangle b10">
 
   </div>
 
-  <div class="col-md-3 square b11">
+  <div class="col-md-3 d-none square b11">
 
   </div>
 
-  <div class="col-md-3 square b12">
+  <div class="col-md-3 d-none square b12">
 
   </div>
 
