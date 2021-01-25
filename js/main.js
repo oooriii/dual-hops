@@ -36,6 +36,7 @@ Vue.component('birres', {
 			.then(response => (this.birres = response.data.birres)).
 			finally(function(){
 				self.loading=false;
+				console.log(this.birres)
 			});
 
 	},
