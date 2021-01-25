@@ -1,20 +1,21 @@
-'events':[
-  {
-    'titol': 'Cata Ipes del Club',
-    'data': '2020.05.15 22:00',
-    'complet': false,
-    'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
-  },
-  {
-    'titol': 'Cata cerveses del mes',
-    'data': '2020.07.25 18:00',
-    'complet': false,
-    'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
-  },
-  {
-    'titol': 'Cata Americanes',
-    'data': '2021.01.29 22:00',
-    'complet': true,
-    'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
-  },
+[
+   {
+      "titol":"Cata Ipes del Club",
+      "data":"2020.05.15 22:00",
+      "complet":false,
+      "formulari":"https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing"
+   },
+   {
+      "titol":"Cata cerveses del mes",
+      "data":"2020.07.25 18:00",
+      "complet":false,
+      "formulari":"https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing"
+   },
+   {
+      "titol":"Cata Americanes",
+      "data":"2021.01.29 22:00",
+      "complet":true,
+      "formulari":"https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing"
+   }
 ]
+#3

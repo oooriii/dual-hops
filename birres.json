@@ -1,34 +1,34 @@
 [
-  {
-    'nom': 'Simple A',
-    'estil': 'American IPA',
-    'alc': 7.7,
-    'amargor': 58,
-    'prod': 'Dual Hops',
-    'country': 'Cat',
-  },
-  {
-    'nom': 'Simple B',
-    'estil': 'NeIPA',
-    'alc': 7.7,
-    'amargor': 58,
-    'prod': 'Dual Hops',
-    'country': 'Cat',
-  },
-  {
-    'nom': 'Pinya Colada!',
-    'estil': 'Milkshake IPA',
-    'alc': 6.2,
-    'amargor': 30,
-    'prod': 'Dual Hops',
-    'country': 'Cat',
-  },
-  {
-    'nom': 'Neipa Azacca|Sabro',
-    'estil': 'NePA',
-    'alc': 6,
-    'amargor': 28,
-    'prod': 'Dual Hops',
-    'country': 'Cat',
-  },
+   {
+      "nom":"Simple A",
+      "estil":"American IPA",
+      "alc":7.7,
+      "amargor":58,
+      "prod":"Dual Hops",
+      "country":"Cat"
+   },
+   {
+      "nom":"Simple B",
+      "estil":"NeIPA",
+      "alc":7.7,
+      "amargor":58,
+      "prod":"Dual Hops",
+      "country":"Cat"
+   },
+   {
+      "nom":"Pinya Colada!",
+      "estil":"Milkshake IPA",
+      "alc":6.2,
+      "amargor":30,
+      "prod":"Dual Hops",
+      "country":"Cat"
+   },
+   {
+      "nom":"Neipa Azacca|Sabro",
+      "estil":"NePA",
+      "alc":6,
+      "amargor":28,
+      "prod":"Dual Hops",
+      "country":"Cat"
+   }
 ]
