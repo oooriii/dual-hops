@@ -76,3 +76,7 @@ section.container{
 .col1 *{
   background-color: #00d1b2;
 }
+
+.socis .card-body ul {
+    min-height: 350px;
+}
