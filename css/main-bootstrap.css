@@ -45,7 +45,10 @@ body{
     flex-wrap: wrap;
     margin-right: -5px;
     margin-left: -5px;
-}
+  }
+  #socis .col {
+    flex-basis: revert;
+  }
 
 }
 
