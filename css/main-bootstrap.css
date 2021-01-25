@@ -63,7 +63,12 @@ body{
   }
 
 }
-
+@media (max-width: 375px){
+  .row {
+    margin-right: inherit;
+    margin-left: inherit;
+  }
+}
 /**** header ****/
 .aux-span{
   height: 140px;
