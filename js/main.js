@@ -183,4 +183,24 @@ var vm = new Vue({
 		 },
 	 },
 */
+	mounted () {
+			this.loading = true;
+			self = this;
+			// birres
+			axios.get('events.json')
+			.then(response => (this.events = response.data)).
+			finally(function(){
+				self.loading=false;
+			});
+			this.loading = true;
+			self = this;
+			// birres
+			axios.get('birres.json')
+			.then(response => (this.birres = response.data)).
+			finally(function(){
+				self.loading=false;
+				console.log(self.birres)
+			});
+
+	},
 });

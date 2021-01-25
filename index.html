@@ -185,7 +185,7 @@
       <p>* From USA<br/>WeldWrks Brewing i Alvarado Street</p>
       <p>Only premium members</p>
 -->
-<!--
+
 <article v-for="birra in birres">
   <h3>{{birra.nom}}</h3>
   <div>
@@ -196,9 +196,9 @@
     <span aria-aria-label="country">{{birra.country}}</span>
   </div>
 </article>
--->
+<!--
 <birres></birres>
-
+-->
   </div>
 
 <div class="col-md-9 no-gutters row">
@@ -285,19 +285,22 @@
     <header>
       <h2>Activitats i events</h2>
     </header>
-<!--
+
     <main>
       <p>Durant aquest mes farem les següents activitats</p>
       <calendar>
       </calendar>
       <ul>
+<!--
         <li><time>2020.05.15 22:00</time>Cata cerveses del mes</li>
         <li><time>2020.05.25 22:00</time>Cata Ipes del club</li>
+-->
+        <li v-for="event in events"><time>{{event.data}}</time>{{event.titol}} <a v-if="! event.complet" v-bind:href="event.formulari" target="_blank" class="w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span v-if="event.complet" class="text-danger">COMPLET!</span></li>
       </ul>
     </main>
--->
+<!--
 <events></events>
-
+-->
   </article>
   <figure class="col-md-6">
     <img src="./images/girl-beer.jpg" alt="events club"/>
