@@ -58,10 +58,10 @@ var vm = new Vue({
 			.then(response => (this.birres = response.data)).
 			finally(function(){
 				self.loading=false;
-				console.log(self.birres)
+
+				console.log(self.data);
+
 			});
 
-			console.log(this.events);
-			console.log(this.birres);
 	},
 });
