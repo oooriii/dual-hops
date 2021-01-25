@@ -47,8 +47,10 @@ Vue.component('events', {
 	template: `
 	<main>
 		<p>Durant aquest mes farem les següents activitats:</p>
+<!--
 		<calendar>
 		</calendar>
+-->
 		<ul>
 			<li v-for="event in events"><time>{{event.data-hora}}</time>{{event.titol}} <a v-if="! event.complet" href="{{event.formulari}}" target="_blank" class="w-100 btn btn-lg btn-outline-dark font-weight-bold text-dark" role="button">Apuntar-m'hi!</a><span class="text-danger">COMPLET!</span></li>
 		</ul>
