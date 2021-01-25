@@ -1,19 +1,19 @@
 [
   {
     'titol': 'Cata Ipes del Club',
-    'data-hora': '2020.05.15 22:00',
+    'data': '2020.05.15 22:00',
     'complet': false,
     'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
   },
   {
     'titol': 'Cata cerveses del mes',
-    'data-hora': '2020.07.25 18:00',
+    'data': '2020.07.25 18:00',
     'complet': false,
     'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
   },
   {
     'titol': 'Cata Americanes',
-    'data-hora': '2021.01.29 22:00',
+    'data': '2021.01.29 22:00',
     'complet': true,
     'formulari': 'https://docs.google.com/forms/d/1vvvmVoDZle_eTy4bVa5H-aYieYWiZWDYP_tNaWr3WJ8/edit?usp=sharing'
   },
