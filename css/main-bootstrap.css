@@ -21,6 +21,10 @@ body{
     margin: auto;
   }
 
+  .socis .card-body ul {
+      min-height: 50px;
+  }
+
 }
 
 /**** header ****/

@@ -51,7 +51,7 @@
 <!--
   <ul class="d-none">
 -->
-<ul class="display-6" v-bind:class="{ isActiveBurger ? '': d-none}">
+<ul class="display-sm-6" v-bind:class="isActiveBurger ? '': d-none">
 
     <li><a href="#socis" class="link is-info punts align-middle">Socis</a></li>
     <li><a href="#el-lab" class="link is-info punts align-middle">El Lab</a></li>
@@ -190,7 +190,7 @@
       <p>Only premium members</p>
 -->
 
-<article v-for="birra in birres">
+<article v-for="birra in birres" class="display-sm-6">
   <h3>{{birra.nom}}</h3>
   <div>
     <span aria-aria-label="style">{{birra.estil}}</span>
@@ -214,7 +214,7 @@
 
   <div class="col-md-8 h-rectangle b7">
     <h1 class="display-5 text-uppercase font-weight-bold">Dual Hops</h1>
-    <p>
+    <p class="display-sm-6">
       Dual Hops és un projecte col·laboratiu d'elaboració, experimentació i investigació al voltant de la cervesa artesana i de totes aquelles matèries primes que intervenen en la seva elaboració. Per poder fer possible aquest projecte hem creat el nostre LAB, un petit obrador i tap room amb encant, on duem a terme les nostres activitats, i que volem obrir i compartir amb els nostres socis i sòcies col·laboradores...
     </p>
     <p>
@@ -320,7 +320,7 @@
       <p class="lead">Els socis tenen els següents avantatges:</p>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
-          <div class="col socis">
+          <div class="col col-sm-12 socis">
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <h4 class="my-0 fw-normal">Anual</h4>
@@ -344,7 +344,7 @@
           </div>
           </div>
 
-          <div class="col socis">
+          <div class="col col-sm-12 socis">
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <h4 class="my-0 fw-normal">Semestral</h4>
@@ -368,7 +368,7 @@
             </div>
           </div>
           </div>
-          <div class="col socis">
+          <div class="col col-sm-12 socis">
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <h4 class="my-0 fw-normal">Mensual</h4>
