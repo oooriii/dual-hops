@@ -329,3 +329,13 @@ footer .localitzacio address{
 footer .localitzacio.mapa{
   margin-top: 7rem;
 }
+
+.mobile-menu{
+  background-color: white;
+}
+.mobile-menu ul{
+  list-style: none;
+}
+.mobile-menu a{
+  font-size: 2rem;
+}
