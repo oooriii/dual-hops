@@ -121,7 +121,7 @@ var vm = new Vue({
          country: 'Cat',
        },
      ],
-		 events[],
+		 events:[],
      /*
 		 isActiveBurger: false,
 		 isActiveAcces: false,
